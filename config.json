@@ -1,0 +1,18 @@
+{
+  "vars": {},
+  "css": [
+    "grid.less",
+    "tables.less",
+    "forms.less",
+    "buttons.less",
+    "alerts.less",
+    "panels.less",
+    "tooltip.less",
+    "modals.less"
+  ],
+  "js": [
+    "modal.js",
+    "tooltip.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=880062fedbf6073f3148"
+}

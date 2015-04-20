@@ -1,0 +1,102 @@
+body {
+	
+	 max-width: 1020px;
+	 margin: 0 auto; 
+	 padding: 30px;
+
+}
+
+/* Overflow protection */
+
+.row {
+	
+	max-width: 100%;
+	overflow: hidden;
+
+}
+
+/* Columns with equal width as class-less div's in a .row */
+
+.row.auto {
+	
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.row.auto > * {
+	
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	word-wrap: break-word;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.row:before, .row:after {
+	
+	content: none;
+
+}
+
+.row > * > .row {
+	
+	max-width: calc(100% + 30px);
+	width: calc(100% + 30px);
+
+}
+
+.row > * > .row.auto {
+	
+	margin: -15px;
+
+}
+
+.row.wrap {
+	
+	display: block;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	 -webkit-justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	font-size: 0;
+	
+}
+
+_:-ms-input-placeholder, :root .row.wrap { /* IE10+ */
+
+	display: block;
+
+}
+
+.row.wrap > * {
+	
+	display: inline-block;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 20em; /* Minimum column width */
+	text-align: left;
+	font-size: 15px;
+	background: grey;
+
+}
+
+/*
+.row > div:not([class*=col]) {
+
+}
+*/
+
+.btn {
+	
+	background: #eee;
+	
+}
